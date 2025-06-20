@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Posters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    marquee h2 {
+      margin: 0;
+      color: darkblue;
+    }
+
+    .movie-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .poster-row {
+      display: grid;
+      grid-template-columns: 160px auto;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .poster img {
+      width: 160px;
+      height: 240px;
+      max-width: 100%;
+    }
+
+    .details {
+      font-size: 14px;
+    }
+
+    .movie-title {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    
+    (max-width: 600px) {
+      .poster-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .poster img {
+        width: 100%;
+        height: auto;
+      }
+
+      .details {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<marquee behavior="scroll" direction="left" scrollamount="5">
+  <h2>Movie Posters</h2>
+</marquee>
+
+<div class="movie-box">
+  <div class="poster-row">
+    <div class="poster">
+      <img src="https://www.bing.com/th/id/OIP.dk5Ce3mDA_dk1We_RRHFaQHaK9?w=160&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="How to Train Your Dragon">
+    </div>
+    <div class="details">
+      <p><strong>Cast:</strong> John, Kennedy</p>
+      <p><strong>Director:</strong> David Miller</p>
+      <p><strong>Music:</strong> Olfey</p>
+    </div>
+  </div>
+  <div class="movie-title">How to Train Your Dragon</div>
+</div>
+
+<div class="movie-box">
+  <div class="poster-row">
+    <div class="poster">
+      <img src="https://www.bing.com/th/id/OIP.idzSVxZ2hTEHKLNLbRJ07gHaKv?w=138&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Planet 51">
+    </div>
+    <div class="details">
+      <p><strong>Cast:</strong> Finch, Perry</p>
+      <p><strong>Director:</strong> Pele</p>
+      <p><strong>Music:</strong> Marky</p>
+    </div>
+  </div>
+  <div class="movie-title">Planet 51</div>
+</div>
+
+<div class="movie-box">
+  <div class="poster-row">
+    <div class="poster">
+      <img src="https://www.bing.com/th/id/OIP.gAJgGZuYe9EuRyH_5rgoCQHaK7?w=160&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Incredibles 3">
+    </div>
+    <div class="details">
+      <p><strong>Cast:</strong> Hanks, Tom</p>
+      <p><strong>Director:</strong> Alfred</p>
+      <p><strong>Music:</strong> Sebastian</p>
+    </div>
+  </div>
+  <div class="movie-title">Incredibles 3</div>
+</div>
+
+<div class="movie-box">
+  <div class="poster-row">
+    <div class="poster">
+      <img src="https://www.bing.com/th/id/OIP.myzEHtZlgBd89yFOVTM-6QHaNK?w=138&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Horror House">
+    </div>
+    <div class="details">
+      <p><strong>Cast:</strong> Jennifer, Wood</p>
+      <p><strong>Director:</strong> Quinton</p>
+      <p><strong>Music:</strong> Ben</p>
+    </div>
+  </div>
+  <div class="movie-title">Horror House</div>
+</div>
+
+</body>
+</html>
